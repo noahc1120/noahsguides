@@ -1,0 +1,48 @@
+/* Misc */
+@font-face {
+    font-family: "White-Rabbit";
+    src: url("fonts/whitrabt.eot");
+    src: url("fonts/whitrabt.woff2") format("woff2"),
+    url("fonts/whitrabt.woff") format("woff"),
+    url("fonts/whitrabt.ttf") format("truetype");
+}
+
+/* Hex Codes:
+0050FF - Blue Accent (Primary Color)
+E1EBFF - Light Blue Accent (Secondary Color)
+006BFF - Blue Accent 2 (Backup Color)
+D3D3D3 - Grey (Primary Font Color)
+*/
+
+/* Main Styles */
+
+body {
+    font-family: "White-Rabbit", 'Courier New', Courier, monospace;
+}
+
+nav {
+    background-color: #0050FF;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 1em;
+    padding: auto;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: #D3D3D3;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #006BFF;
+}
