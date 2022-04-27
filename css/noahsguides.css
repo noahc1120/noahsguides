@@ -79,7 +79,6 @@ header {
     position: relative;
     box-sizing: border-box;
     left: 0;
-    top: 0;
 }
 
 h1 {
@@ -121,7 +120,6 @@ nav ul li a:hover {
 }
 
 main {
-    position: relative;
     margin-top: 3em;
     margin-bottom: 3em;
     background-color: rgba(225, 235, 255, 0.5);
