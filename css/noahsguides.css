@@ -22,16 +22,17 @@ body {
 }
 
 h1 {
-    margin: 0;
-    padding: 10em;
+    margin: 2em;
+    padding: 25px;
     background-color: #E1EBFF;
     color: #0050FF;
-    text-shadow: 1em 1em black;
+    text-shadow: 2px 2px 3px black;
     text-align: left;
 }
 
 nav {
-    margin: 5em 0em 0em 0em;
+    margin: 0;
+    font-size: 7em;
     background-color: rgba(0, 80, 255, 0.75);
 }
 
@@ -72,7 +73,7 @@ main {
 }
 
 footer {
-    position: fixed;
+    position: absolute;
     background-color: rgba(0, 80, 255, 0.75);
     color: #D3D3D3;
     width: 100%;
@@ -89,14 +90,23 @@ footer a:hover {
 
 /* IDs */
 #wrapper {
-    margin: 10% 35% 35% 10%;
+    margin: 5em;
     padding: auto;
 }
 
 #home {
-    margin-left: 65%;
+    max-width: 35%;
+    flex-direction: row;
 }
 
 #featured {
+    max-width: 65%;
+    flex-direction: row;
     background-color: #0050FF;
+    height: auto;
+}
+
+/* Classes */
+.flex {
+    display: flex;
 }
