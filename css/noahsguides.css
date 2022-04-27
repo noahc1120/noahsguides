@@ -73,7 +73,12 @@ body {
     animation-timing-function: linear;  
 }
 
+header {
+    margin-top: 3em;
+}
+
 h1 {
+    display: block;
     margin: 0;
     width: 100%;
     padding: 10px;
@@ -83,7 +88,6 @@ h1 {
 }
 
 nav {
-    margin: 0;
     width: 100%;
     font-size: 1em;
     padding: 0;
