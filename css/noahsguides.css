@@ -22,8 +22,8 @@ body {
 }
 
 h1 {
-    margin: 2em;
-    padding: 25px;
+    margin-top: 2em;
+    padding: 3px;
     background-color: #E1EBFF;
     color: #0050FF;
     text-shadow: 2px 2px 3px black;
@@ -73,6 +73,7 @@ main {
 }
 
 footer {
+    font-size: 5em;
     position: absolute;
     background-color: rgba(0, 80, 255, 0.75);
     color: #D3D3D3;
@@ -95,12 +96,12 @@ footer a:hover {
 }
 
 #home {
-    max-width: 35%;
+    max-width: 45%;
     flex-direction: row;
 }
 
 #featured {
-    max-width: 65%;
+    max-width: 55%;
     flex-direction: row;
     background-color: #0050FF;
     height: auto;
