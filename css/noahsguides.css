@@ -7,11 +7,12 @@
     url("/noahsguides/css/fonts/whitrabt.ttf") format("truetype");
 }
 
-/* Hex Codes:
-0050FF - Blue Accent (Primary Color)
-E1EBFF - Light Blue Accent (Secondary Color)
-006BFF - Blue Accent 2 (Backup Color)
-D3D3D3 - Grey (Primary Font Color)
+/* Color Codes
+Hex:        RGBA                        Descripiton
+0050FF  -   rgba(0, 80, 255, 1)     =   Blue Accent (Primary Color)            
+E1EBFF  -   rgba(225, 235, 255, 1)  =   Light Blue Accent (Secondary Color)
+006BFF  -   rgba(0, 107, 255, 1)    =   Blue Accent 2 (Backup Color)
+D3D3D3  -   rgba(211, 211, 211, 1)  =   Grey (Primary Font Color)
 */
 
 /* Main Styles */
@@ -31,10 +32,13 @@ h1 {
 
 nav {
     margin: 5em 0em 0em 0em;
-    background-color: #0050FF;
+    background-color: rgba(0, 80, 255, 0.75);
 }
 
 nav img {
+    display: block;
+    height: auto;
+    width: auto;
     float: right;
 }
 
@@ -61,10 +65,17 @@ nav ul li a:hover {
     background-color: #006BFF;
 }
 
+main {
+    background-color: #E1EBFF;
+    color: black;
+    padding: 15px;
+}
+
 footer {
     position: fixed;
-    background-color: #0050FF;
+    background-color: rgba(0, 80, 255, 0.75);
     color: #D3D3D3;
+    width: 100%;
     text-align: center;
 }
 
@@ -80,4 +91,12 @@ footer a:hover {
 #wrapper {
     margin: 10% 35% 35% 10%;
     padding: auto;
+}
+
+#home {
+    margin-left: 65%;
+}
+
+#featured {
+    background-color: #0050FF;
 }
