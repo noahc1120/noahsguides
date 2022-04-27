@@ -99,8 +99,7 @@ nav {
 
 nav ul {
     list-style-type: none;
-    margin: 1em;
-    padding: auto;
+    padding-left: 5px;
     overflow: hidden;
 }
 
