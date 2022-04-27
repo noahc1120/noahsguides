@@ -118,6 +118,7 @@ nav ul li a:hover {
 
 main {
     margin-top: 3em;
+    margin-bottom: 3em;
     background-color: rgba(225, 235, 255, 0.5);
     color: black;
     padding: 15px;
