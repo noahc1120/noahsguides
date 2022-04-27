@@ -23,7 +23,7 @@ body {
 
 h1 {
     margin-top: 2em;
-    padding: 3px;
+    padding: 0px;
     background-color: #E1EBFF;
     color: #0050FF;
     text-shadow: 2px 2px 3px black;
@@ -91,7 +91,7 @@ footer a:hover {
 
 /* IDs */
 #wrapper {
-    margin: 5em;
+    margin: 25em;
     padding: auto;
 }
 
