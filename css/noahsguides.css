@@ -16,9 +16,14 @@ D3D3D3  -   rgba(211, 211, 211, 1)  =   Grey (Primary Font Color)
 */
 
 /* Main Styles */
+html, body {
+    height: 100%;
+}
 
 body {
     font-family: "White-Rabbit", "Courier New", Courier, monospace;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -93,6 +98,7 @@ footer a:hover {
 
 /* IDs */
 #wrapper {
+    flex-grow: 1;
     margin: 25em;
     padding: auto;
 }
