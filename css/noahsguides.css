@@ -17,10 +17,11 @@ D3D3D3 - Grey (Primary Font Color)
 /* Main Styles */
 
 body {
-    font-family: "White-Rabbit", 'Courier New', Courier, monospace;
+    font-family: "White-Rabbit", "Courier New", Courier, monospace;
 }
 
 nav {
+    margin: 0;
     background-color: #0050FF;
 }
 
@@ -45,4 +46,17 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #006BFF;
+}
+
+nav button {
+    font-family: "White-Rabbit", "Courier New", Courier, monospace;
+    display: block;
+    color: #D3D3D3;
+    text-align: center;
+    border: 0;
+    padding: 14px 16px;
+}
+
+nav button:hover {
+    background-color: #0050FF;
 }
