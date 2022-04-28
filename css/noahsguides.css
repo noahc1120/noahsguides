@@ -139,7 +139,6 @@ nav ul li a:hover {
 
 main {
     margin: 3em 25em;
-    background-color: rgba(225, 235, 255, 0.5);
     background: linear-gradient(90deg, #0050FF 50%, transparent 50%), linear-gradient(90deg, #0050FF 50%, transparent 50%), linear-gradient(0deg, #0050FF 50%, transparent 50%), linear-gradient(0deg, #0050FF 50%, transparent 50%);
     background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
     background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
@@ -147,6 +146,7 @@ main {
     border-radius: 5px;
     padding: 10px;
     animation: dash 5s linear infinite;
+    animation-direction: reverse;
     color: black;
     padding: 15px;
     border-radius: 15px;
