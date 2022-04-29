@@ -105,22 +105,21 @@ h1 a:visited {
 }
 
 nav {
-    font-size: 1em;
+    background-color: #D3D3D3;
     width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: rgba(0, 80, 255, 0.75);
 }
 
 nav ul {
-    margin: 0;
-    list-style-type: none; 
-    padding-left: 10px;
-    overflow: hidden;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 
 nav ul li {
-    float: left;
+    background-color: rgba(0, 80, 255, 0.75);
+    margin: 1px 0;
 }
 
 nav ul li a {
@@ -200,17 +199,6 @@ footer a:hover {
     position: relative;
 }
 
-#home {
-    float: right;
-    max-width: 35%;
-}
-
-#featured {
-    max-width: 45%;
-    background-color: #0050FF;
-    height: auto;
-}
-
 #logo {
     display: flex;
     align-items: center;
@@ -221,23 +209,27 @@ footer a:hover {
 
 
 /* Media Queries */
-@media (max-width: 600px) {
+@media (min-width: 600px) {
     nav {
-        background-color: #D3D3D3;
+        font-size: 1em;
         width: 100%;
-    }
-
-    nav ul {
+        margin: 0;
         padding: 0;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-around;
+        background-color: rgba(0, 80, 255, 0.75);
+    }
+    
+    nav ul {
+        display: block;
+        margin: 0;
+        list-style-type: none; 
+        padding-left: 10px;
+        overflow: hidden;
     }
 
     nav ul li {
-        background-color: rgba(0, 80, 255, 0.75);
-        margin: 1px 0;
+        display: block;
+        float: left;
+        background-color: rgba(0, 0, 0, 0);
     }
 
     main {
@@ -272,7 +264,8 @@ footer a:hover {
         background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
         background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
         border-radius: 5px;
-        animation: dash 2s linear infinite;
+        animation: dash 1s linear infinite;
         animation-direction: reverse;
+        margin: 3em 25em;
     }
 }
