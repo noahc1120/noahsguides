@@ -66,20 +66,9 @@ D3D3D3  -   rgba(211, 211, 211, 1)  =   Grey (Primary Font Color)
 /* Main Styles */
 body {
     font-family: "White-Rabbit", "Courier New", Courier, monospace;
-    background: url("/noahsguides/tiny_grid.webp") repeat 0 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-    /* Open Source Animation from - https://codepen.io/kootoopas/pen/kGPoaB?editors=0100 */
-    -webkit-animation: bg-scrolling-reverse 1.05s infinite; 
-    -moz-animation: bg-scrolling-reverse 1.05s infinite; 
-    -o-animation: bg-scrolling-reverse 1.05s infinite; 
-    animation: bg-scrolling-reverse 1.05s infinite; 
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-    -o-animation-timing-function: linear;
-    animation-timing-function: linear;  
 }
 
 header {
@@ -148,14 +137,7 @@ nav ul li a:hover {
 
 main {
     margin: 3em 25em;
-    background: linear-gradient(90deg, #0050FF 50%, transparent 50%), linear-gradient(90deg, #0050FF 50%, transparent 50%), linear-gradient(0deg, #0050FF 50%, transparent 50%), linear-gradient(0deg, #0050FF 50%, transparent 50%);
-    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
-    background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
-    background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
-    border-radius: 5px;
-    padding: 10px;
-    animation: dash 2s linear infinite;
-    animation-direction: reverse;
+    background-color: rgba(211, 211, 211, 0.5);
     color: black;
     padding: 15px;
     border-radius: 15px;
@@ -239,9 +221,10 @@ footer a:hover {
 
 
 /* Media Queries */
-@media (max-width: 600px) {
+@media (min-width: 600px) {
     nav {
         background-color: #D3D3D3;
+        width: 100%;
     }
 
     nav ul {
@@ -255,5 +238,46 @@ footer a:hover {
     nav ul li {
         background-color: rgba(0, 80, 255, 0.75);
         margin: 1px 0;
+    }
+
+    main {
+        width: fit-content;
+        margin: auto;
+        padding: auto;
+        font-size: 0.5em;
+    }
+
+    main h2 {
+        font-size: 0.75em;
+    }
+
+    footer {
+        position: fixed;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        background: url("/noahsguides/tiny_grid.webp") repeat 0 0;
+    /* Open Source Animation from - https://codepen.io/kootoopas/pen/kGPoaB?editors=0100 */
+    -webkit-animation: bg-scrolling-reverse 1.05s infinite; 
+    -moz-animation: bg-scrolling-reverse 1.05s infinite; 
+    -o-animation: bg-scrolling-reverse 1.05s infinite; 
+    animation: bg-scrolling-reverse 1.05s infinite; 
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;  
+    }
+
+    main {
+        background: linear-gradient(90deg, #0050FF 50%, transparent 50%), linear-gradient(90deg, #0050FF 50%, transparent 50%), linear-gradient(0deg, #0050FF 50%, transparent 50%), linear-gradient(0deg, #0050FF 50%, transparent 50%);
+        background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+        background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
+        background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+        border-radius: 5px;
+        animation: dash 5s linear infinite;
+        animation-direction: reverse;
     }
 }
