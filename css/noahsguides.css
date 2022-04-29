@@ -221,7 +221,7 @@ footer a:hover {
 
 
 /* Media Queries */
-@media (min-width: 600px) {
+@media (max-width: 600px) {
     nav {
         background-color: #D3D3D3;
         width: 100%;
@@ -260,15 +260,15 @@ footer a:hover {
 @media (min-width: 1024px) {
     body {
         background: url("/noahsguides/tiny_grid.webp") repeat 0 0;
-    /* Open Source Animation from - https://codepen.io/kootoopas/pen/kGPoaB?editors=0100 */
-    -webkit-animation: bg-scrolling-reverse 1.05s infinite; 
-    -moz-animation: bg-scrolling-reverse 1.05s infinite; 
-    -o-animation: bg-scrolling-reverse 1.05s infinite; 
-    animation: bg-scrolling-reverse 1.05s infinite; 
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-    -o-animation-timing-function: linear;
-    animation-timing-function: linear;  
+        /* Open Source Animation from - https://codepen.io/kootoopas/pen/kGPoaB?editors=0100 */
+        -webkit-animation: bg-scrolling-reverse 1.05s infinite; 
+        -moz-animation: bg-scrolling-reverse 1.05s infinite; 
+        -o-animation: bg-scrolling-reverse 1.05s infinite; 
+        animation: bg-scrolling-reverse 1.05s infinite; 
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+        -o-animation-timing-function: linear;
+        animation-timing-function: linear;  
     }
 
     main {
@@ -277,7 +277,7 @@ footer a:hover {
         background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
         background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
         border-radius: 5px;
-        animation: dash 5s linear infinite;
+        animation: dash 2s linear infinite;
         animation-direction: reverse;
     }
 }
