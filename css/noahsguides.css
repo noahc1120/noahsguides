@@ -198,11 +198,14 @@ footer a:hover {
 
 #courseSelection li ol {
     background-color: #E1EBFF;
-    border-left: 5px solid #006BFF;
+    border-left: 5px solid rgba(225, 235, 255, 0.5);
+    margin-left: 1em;
+    padding-left: 5px;
 }
 
 #courseSelection li ol li {
-    padding-left: 7px;
+    padding: 3px 0 3px 2px;
+    margin: 0;
 }
 /* Classes */
 
