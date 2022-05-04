@@ -204,7 +204,7 @@ footer a:hover {
 }
 
 #courseSelection li ol li {
-    padding: 3px 0 3px 2px;
+    padding: 5px;
     margin: 0;
 }
 /* Classes */
@@ -246,6 +246,10 @@ footer a:hover {
 
     #logo {
         justify-content: left;
+    }
+
+    #courseSelection li ol {
+        background-color: rgba(225, 235, 255, 1);
     }
 }
 
