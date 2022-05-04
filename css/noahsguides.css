@@ -132,6 +132,10 @@ main {
     border-radius: 15px;
 }
 
+main ul {
+    margin: 0;
+}
+
 main ul li a {
     text-decoration: none;
     font-weight: bold;
