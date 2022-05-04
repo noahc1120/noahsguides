@@ -156,6 +156,14 @@ h2 {
     margin: auto;
 }
 
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px;
+    color: #006BFF;
+    margin: auto;
+}
+
 footer {
     font-size: .8em;
     background-color: rgba(0, 80, 255, 0.75);
