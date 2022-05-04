@@ -1,10 +1,10 @@
 /* Misc */
 @font-face {
     font-family: "White-Rabbit";
-    src: url("css/fonts/whitrabt.eot");
-    src: url("css/fonts/whitrabt.woff2") format("woff2"),
-    url("css/fonts/whitrabt.woff") format("woff"),
-    url("css/fonts/whitrabt.ttf") format("truetype");
+    src: url("/noahsguides/css/fonts/whitrabt.eot");
+    src: url("/noahsguides/css/fonts/whitrabt.woff2") format("woff2"),
+    url("/noahsguides/css/fonts/whitrabt.woff") format("woff"),
+    url("/noahsguides/css/fonts/whitrabt.ttf") format("truetype");
 }
 
 @-webkit-keyframes bg-scrolling-reverse {
@@ -72,27 +72,17 @@ body {
 }
 
 header {
-    margin-top: 3em;
-    padding: 0;
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
+    margin-top: 2em;
 }
 
 header img {
-    padding: 0;
-    margin-bottom: 5px;
-    float: left;
+    height: 55px;
 }
 
 h1 {
-    margin: 0;
-    display: block;
-    padding: 0;
     color: #0050FF;
     text-shadow: 2px 2px 3px black;
-    text-align: left;
+    padding: 0;
 }
 
 h1 a {
@@ -135,7 +125,7 @@ nav ul li a:hover {
 }
 
 main {
-    margin: 3em 25em;
+    margin: 1em;
     background-color: rgba(211, 211, 211, 0.5);
     color: black;
     padding: 15px;
@@ -150,10 +140,6 @@ main ul li a {
 
 main ul li a:hover {
     color: #006;
-}
-
-main ul li a:visited {
-    color: #006BFF;
 }
 
 p {
@@ -202,9 +188,22 @@ footer a:hover {
 #logo {
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
 }
 
+#courseSelection {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+#courseSelection li ol {
+    background-color: #E1EBFF;
+    border-left: 5px solid #006BFF;
+}
+
+#courseSelection li ol li {
+    padding-left: 7px;
+}
 /* Classes */
 
 
@@ -233,18 +232,44 @@ footer a:hover {
     }
 
     main {
-        width: fit-content;
-        margin: auto;
-        padding: auto;
+        margin: 1em;
+        padding: 15px;
     }
 
     footer {
         position: absolute;
         width: 100%;
     }
+
+    #logo {
+        justify-content: left;
+    }
 }
 
 @media (min-width: 1024px) {
+    header {
+        margin-top: 3em;
+        padding: 0;
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    
+    header img {
+        height: 65px;
+        padding: 0;
+        margin-bottom: 5px;
+        float: left;
+    }
+    
+    h1 {
+        margin: 0;
+        display: block;
+        padding: 0;
+        text-align: left;
+    }
+
     body {
         background: url("/noahsguides/tiny_grid.webp") repeat 0 0;
         /* Open Source Animation from - https://codepen.io/kootoopas/pen/kGPoaB?editors=0100 */
@@ -264,8 +289,9 @@ footer a:hover {
         background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
         background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
         border-radius: 5px;
-        animation: dash 1s linear infinite;
+        animation: dash 15s linear infinite;
         animation-direction: reverse;
         margin: 3em 25em;
+        width: inherit;
     }
 }
