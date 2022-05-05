@@ -346,7 +346,7 @@ footer a:hover {
     }
 
     body {
-        background: url("/noahsguides/images/tiny_grid.webp") repeat 0 0;
+        background: url("../images/tiny_grid.webp") repeat 0 0;
         /* Open Source Animation from - https://codepen.io/kootoopas/pen/kGPoaB?editors=0100 */
         -webkit-animation: bg-scrolling-reverse 1.05s infinite; 
         -moz-animation: bg-scrolling-reverse 1.05s infinite; 
