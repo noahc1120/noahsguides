@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="/noahsguides/css/noahsguides.css">
-        <link rel="icon" href="/noahsguides/WebsiteLogo.ico" type="image/x-icon">
+        <link rel="icon" href="/noahsguides/images/WebsiteLogo.ico" type="image/x-icon">
         <meta charset="utf-8">
         <meta name="viewportt" content="width=device-width, initial-scale=1.0">
         <title>Noah's Guides</title>
@@ -10,7 +10,7 @@
     <body>
         <header>
             <div id="logo">
-                <img src="/noahsguides/WebsiteLogo.png" alt="Noah's Guides logo"><h1><a href="/noahsguides/index.html">Noah's Guides</a></h1>
+                <img src="/noahsguides/images/WebsiteLogo.png" alt="Noah's Guides logo"><h1><a href="/noahsguides/index.html">Noah's Guides</a></h1>
             </div>
             <nav>
                 <ul>
@@ -36,8 +36,47 @@
                 <p>
                     Questions? Concerns? Feel free to visit the About Me page to contact me or leave a message!
                 </p>
-                <div>
-                    <!--FEATURED PAGES!-->
+                <div class="slideshow-container">
+                    <!--
+                        Notice! 
+                        Featured pages made possible using the code from this site:
+                        https://www.w3docs.com/snippets/css/how-to-create-an-image-slider-or-slideshow.html
+                    -->
+                    <h2>Featured</h2>
+                    <div class="mySlides fade">
+                        <img src="/noahsguides/images/polynomialsThumbnail.png" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="/noahsguides/images/trigonometryThumbnail.png" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="/noahsguides/images/circlesThumbnail.png" style="width:100%">
+                    </div>
+                </div>
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+                    function showSlides() {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        for(i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slideIndex++;
+                        if(slideIndex > slides.length) {
+                            slideIndex = 1
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        setTimeout(showSlides, 5000); // Change image every 5 seconds
+                    }
+                  </script>
+                <div class="altStyle">
+                    <h2>Changelog - 5/4/2022</h2>
+                    <ul>
+                        <li>[+] Major CSS Overhaul</li>
+                        <li>[+] New layout system for accessibility</li>
+                        <li>[+] Updated content on a few pages</li>
+                    </ul>
                 </div>
             </main>
         </div>
