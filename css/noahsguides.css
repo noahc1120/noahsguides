@@ -208,6 +208,10 @@ td:first-child {
     color: rgb(0, 0, 196);
 }
 
+td:nth-last-child(2) {
+    text-align: center;
+}
+
 footer {
     font-size: .8em;
     background-color: rgba(0, 80, 255, 0.75);
