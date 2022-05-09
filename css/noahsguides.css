@@ -95,6 +95,7 @@ header {
 
 header img {
     height: 55px;
+    vertical-align: middle;
 }
 
 h1 {
@@ -188,8 +189,8 @@ h3 {
     margin: auto;
 }
 
-img {
-    vertical-align: middle;
+figure {
+    float: right;
 }
 
 table {
@@ -274,11 +275,15 @@ footer a:hover {
 .mathTip {
     margin: 1em auto;
     padding: 0.5em;
-    color: #0050FF;
+    color: black;
     background-color: rgba(225, 235, 255, 1);
     border: 3px solid #0050FF;
     border-radius: 3px;
     font-style: italic;
+}
+
+.mathStyles {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .fraction {
@@ -301,6 +306,12 @@ footer a:hover {
 
 .fraction span.bar {
     display: none;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .altStyle {
