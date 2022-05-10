@@ -1,10 +1,10 @@
 /* Misc */
 @font-face {
     font-family: "White-Rabbit";
-    src: url("/noahsguides/css/fonts/whitrabt.eot");
-    src: url("/noahsguides/css/fonts/whitrabt.woff2") format("woff2"),
-    url("/noahsguides/css/fonts/whitrabt.woff") format("woff"),
-    url("/noahsguides/css/fonts/whitrabt.ttf") format("truetype");
+    src: url("./fonts/whitrabt.eot");
+    src: url("./fonts/whitrabt.woff2") format("woff2"),
+    url("./fonts/whitrabt.woff") format("woff"),
+    url("./fonts/whitrabt.ttf") format("truetype");
 }
 
 @-webkit-keyframes bg-scrolling-reverse {
@@ -81,11 +81,14 @@ D3D3D3  -   rgba(211, 211, 211, 1)  =   Grey (Primary Font Color)
 */
 
 /* Main Styles */
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     font-family: "White-Rabbit", "Courier New", Courier, monospace;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     height: 100%;
 }
 
@@ -187,10 +190,6 @@ h3 {
     padding: 5px;
     color: #006BFF;
     margin: auto;
-}
-
-figure {
-    float: right;
 }
 
 table {
@@ -308,6 +307,28 @@ footer a:hover {
     display: none;
 }
 
+.diagram {
+    margin: 1em 0;
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+    background-color: #E1EBFF;
+    border-radius: 10px;
+    float: right;
+}
+
+.row { 
+    display: flex;
+}
+
+.right {
+    flex: 40%;
+}
+
+.left {
+    flex: 60%;
+}
+
 .clearfix::after {
     content: "";
     clear: both;
@@ -416,7 +437,7 @@ footer a:hover {
     }
 
     body {
-        background: url("../images/tiny_grid.webp") repeat 0 0;
+        background: url("../../images/tiny_grid.webp") repeat 0 0;
         /* Open Source Animation from - https://codepen.io/kootoopas/pen/kGPoaB?editors=0100 */
         -webkit-animation: bg-scrolling-reverse 1.05s infinite; 
         -moz-animation: bg-scrolling-reverse 1.05s infinite; 
@@ -436,7 +457,7 @@ footer a:hover {
         border-radius: 5px;
         animation: dash 15s linear infinite;
         animation-direction: reverse;
-        margin: 3em 25em;
+        margin: 3em 15em;
         width: inherit;
     }
 }
