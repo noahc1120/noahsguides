@@ -3,7 +3,6 @@ CISIWEB-72 Web Design Class Project Folders
 
 ## To Do:
 * Content Pages
-* Desmos drawings for pages
 * Use a table of some sorts for requirements
 
 ## Completed:
