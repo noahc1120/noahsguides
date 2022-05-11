@@ -132,6 +132,7 @@ nav ul {
 nav ul li {
     background-color: rgba(0, 80, 255, 0.75);
     margin: 1px 0;
+    font-size: 1.2em;
 }
 
 nav ul li a {
@@ -171,9 +172,13 @@ main ul li a:hover {
 }
 
 p {
-    font-size: 1.25em;
+    font-size: 1.15em;
     padding: 3px;
     margin: auto;
+}
+
+ul li {
+    font-size: 1.05em;
 }
 
 h2 {
@@ -189,6 +194,14 @@ h3 {
     font-weight: bold;
     padding: 5px;
     color: #006BFF;
+    margin: auto;
+}
+
+h4 {
+    font-size: 1.25em;
+    font-weight: lighter;
+    padding: 5px;
+    color: #0050FF;
     margin: auto;
 }
 
@@ -271,6 +284,12 @@ footer a:hover {
 }
 
 /* Classes */
+.greek {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    color: black;
+}
+
 .mathTip {
     margin: 1em auto;
     padding: 0.5em;
@@ -283,6 +302,9 @@ footer a:hover {
 
 .mathStyles {
     font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    font-style: normal;
+    color: black;
 }
 
 .fraction {
@@ -319,6 +341,11 @@ footer a:hover {
 
 .row { 
     display: flex;
+}
+
+.column:last-child {
+    flex: auto;
+    margin-left: 1em;
 }
 
 .right {
